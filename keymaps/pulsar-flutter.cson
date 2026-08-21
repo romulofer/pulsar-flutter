@@ -1,0 +1,10 @@
+'atom-text-editor[data-grammar="source dart"]':
+  'ctrl-alt-h': 'dart:show-hover-info'
+  'f12': 'dart:go-to-definition'
+
+'atom-workspace':
+  'ctrl-alt-r': 'flutter:run'
+  'ctrl-alt-shift-r': 'flutter:hot-reload'
+  'ctrl-alt-shift-o': 'flutter:hot-restart'
+  'ctrl-alt-shift-q': 'flutter:stop'
+  'ctrl-alt-d': 'flutter:select-device'

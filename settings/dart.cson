@@ -1,0 +1,26 @@
+'.source.dart':
+  'editor':
+    'commentStart': '// '
+    'commentDelimiters':
+      'line': '//'
+      'block': ['/*', '*/']
+    'increaseIndentPattern': '(?x)
+       ^ .* \\{ [^}"\']* $
+      |^ .* \\( [^\\)"\']* $
+      |^ \\s* \\{ \\} $
+      '
+    'decreaseIndentPattern': '(?x)
+       ^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\}
+      |^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\)
+      '
+    'tabLength': 2
+    'softTabs': true
+    'preferredLineLength': 80
+  'bracket-matcher':
+    autocompleteCharacters: [
+      '()'
+      '[]'
+      '{}'
+      '""'
+      "''"
+    ]

@@ -1,0 +1,29 @@
+'context-menu':
+  'atom-text-editor[data-grammar="source dart"]': [
+    { label: 'Dart: Show Hover Info', command: 'dart:show-hover-info' }
+    { label: 'Dart: Go to Definition', command: 'dart:go-to-definition' }
+  ]
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Flutter'
+      'submenu': [
+        { 'label': 'Run', 'command': 'flutter:run' }
+        { 'label': 'Run (Release)', 'command': 'flutter:run-release' }
+        { 'label': 'Run (Profile)', 'command': 'flutter:run-profile' }
+        { 'type': 'separator' }
+        { 'label': 'Hot Reload', 'command': 'flutter:hot-reload' }
+        { 'label': 'Hot Restart', 'command': 'flutter:hot-restart' }
+        { 'label': 'Stop', 'command': 'flutter:stop' }
+        { 'type': 'separator' }
+        { 'label': 'Select Device...', 'command': 'flutter:select-device' }
+        { 'label': 'Screenshot', 'command': 'flutter:screenshot' }
+        { 'type': 'separator' }
+        { 'label': 'Doctor', 'command': 'flutter:doctor' }
+        { 'label': 'Create Project', 'command': 'flutter:create-project' }
+      ]
+    ]
+  }
+]

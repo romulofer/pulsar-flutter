@@ -1,0 +1,20 @@
+name: 'Dart'
+scopeName: 'source.dart'
+type: 'modern-tree-sitter'
+parser: 'tree-sitter-dart'
+
+injectionRegex: '^(dart|DART)$'
+
+fileTypes: [
+  'dart'
+]
+
+comments:
+  start: '// '
+
+treeSitter:
+  grammar: 'tree-sitter-dart/tree-sitter-dart.wasm'
+  highlightsQuery: 'tree-sitter-dart/queries/highlights.scm'
+  tagsQuery: 'tree-sitter-dart/queries/tags.scm'
+  foldsQuery: 'tree-sitter-dart/queries/folds.scm'
+  indentsQuery: 'tree-sitter-dart/queries/indents.scm'

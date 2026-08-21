@@ -1,0 +1,104 @@
+{
+  "name": "pulsar-flutter",
+  "version": "0.1.0",
+  "description": "Dart and Flutter support for the Pulsar editor: syntax highlighting, LSP diagnostics/autocomplete, run/debug, hot reload, and device management.",
+  "keywords": [
+    "dart",
+    "flutter",
+    "lsp",
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/romulofer/pulsar-flutter",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "main": "./lib/main.js",
+  "scripts": {
+    "test": "npm run test:unit",
+    "test:unit": "node --test lib/**/*.test.js",
+    "test:atom": "atom --test spec"
+  },
+  "package-deps": [
+    "linter",
+    "busy-signal"
+  ],
+  "dependencies": {
+    "atom-select-list": "^0.7.0"
+  },
+  "consumedServices": {
+    "hyperlink.injection": {
+      "versions": {
+        "0.1.0": "consumeHyperlinkInjection"
+      }
+    },
+    "todo.injection": {
+      "versions": {
+        "0.1.0": "consumeTodoInjection"
+      }
+    },
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterIndie"
+      }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "1.0.0": "consumeBusySignal"
+      }
+    },
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    }
+  },
+  "configSchema": {
+    "dartSdkPath": {
+      "title": "Dart SDK Path",
+      "description": "Path to the Dart SDK root. Leave empty to resolve `dart` from PATH.",
+      "type": "string",
+      "default": ""
+    },
+    "flutterSdkPath": {
+      "title": "Flutter SDK Path",
+      "description": "Path to the Flutter SDK root. Leave empty to resolve `flutter` from PATH.",
+      "type": "string",
+      "default": ""
+    },
+    "useFvm": {
+      "title": "Use FVM",
+      "description": "Resolve Dart/Flutter binaries through FVM (Flutter Version Management) when available.",
+      "type": "boolean",
+      "default": false
+    },
+    "formatOnSave": {
+      "title": "Format on Save",
+      "description": "Run `dart format` via the LSP formatter on save.",
+      "type": "boolean",
+      "default": true
+    },
+    "codeActionsOnFormat": {
+      "title": "Code Actions on Format",
+      "description": "LSP code actions to apply on format/save.",
+      "type": "array",
+      "default": [
+        "source.organizeImports",
+        "source.fixAll"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/register": "^7.23.0"
+  }
+}
