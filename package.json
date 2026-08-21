@@ -1,6 +1,6 @@
 {
   "name": "pulsar-flutter",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Dart and Flutter support for the Pulsar editor: syntax highlighting, LSP diagnostics/autocomplete, run/debug, hot reload, and device management.",
   "keywords": [
     "dart",
