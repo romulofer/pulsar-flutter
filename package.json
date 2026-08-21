@@ -17,7 +17,7 @@
   "main": "./lib/main.js",
   "scripts": {
     "test": "npm run test:unit",
-    "test:unit": "node --test lib/**/*.test.js",
+    "test:unit": "node --test lib/*.test.js lib/**/*.test.js",
     "test:atom": "atom --test spec"
   },
   "package-deps": [
