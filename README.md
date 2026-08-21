@@ -4,7 +4,7 @@
 
 Suporte moderno a **Dart** e **Flutter** para o editor [Pulsar](https://pulsar-edit.dev/) 🚀
 
-> ⚠️ Em Fase 4 (Teste). Funcional, aguardando validação em ambiente real antes da publicação.
+🇬🇧 [English version below](#-pulsar-flutter-english)
 
 ---
 
@@ -96,8 +96,6 @@ Issues e PRs são bem-vindos no [repositório no GitHub](https://github.com/romu
 ![version](https://img.shields.io/badge/version-0.1.0-blue) ![license](https://img.shields.io/badge/license-MIT-green) ![status](https://img.shields.io/badge/status-in%20development-yellow)
 
 Modern **Dart** and **Flutter** support for the [Pulsar](https://pulsar-edit.dev/) editor 🚀
-
-> ⚠️ In Phase 4 (Testing). Functional, awaiting real-environment validation before publishing.
 
 ---
 
